@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirarte</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav class="menu-principal">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li>
+      <a href="danza-aerea.html" title="Danza aérea">
+        <img src="iconos/aerea24.png" alt="" width="24" height="24">
+        Cuerpos que vuelan
+      </a>
+    </li>
+    <li>
+      <a href="danza-arabe.html" title="Danza árabe">
+        <img src="iconos/arabe24.png" alt="" width="24" height="24">
+        Ritmos del alma
+      </a>
+    </li>
+    <li>
+      <a href="ballet.html" title="Ballet">
+        <img src="iconos/ballet24.png" alt="" width="24" height="24">
+        Clásico y presente
+      </a>
+    </li>
+    <li>
+      <a href="espacio.html" title="Espacio para eventos o reuniones">
+        <img src="iconos/espacio24.png" alt="" width="24" height="24">
+        El lugar que nos abraza
+      </a>
+    </li>
+    <li>
+      <a href="dqueruza.html" title="Milonga">
+        <img src="iconos/queruza24.png" alt="" width="24" height="24">
+        Dqueruza: el pulso compartido
+      </a>
+    </li>
+    <li>
+      <a href="talleres.html" title="Talleres">
+        <img src="iconos/talleres24.png" alt="" width="24" height="24">
+        Donde se aprende y se enseña
+      </a>
+    </li>
+    <li>
+      <a href="tango.html" title="Tango">
+        <img src="iconos/tango24.png" alt="" width="24" height="24">
+        Compás y abrazo
+      </a>
+    </li>
+    <li>
+      <a href="teatro.html" title="Sala de Teatro Alternativo">
+        <img src="iconos/teatro24.png" alt="" width="24" height="24">
+        Escenas que nos miran
+      </a>
+    </li>
+  </ul>
+</nav>
+  <!-- Pantalla de carga -->
+  <div id="loader">
+    <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte cargando">
+    <p>Ajustando el compás...</p>
+  </div>
+
+  <main class="landing" style="display:none;">
+    <header class="logo">
+      <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte">
+    </header>
+
+    <section class="bienvenida">
+           <audio controls>
+        <source src="audio/bienvenida-ale.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+      </audio>     
+      <h1>Bienvenide a <em>Mirarte</em></h1>
+      <p>Este sitio es más que una página: es un espacio que mira, que escucha, que celebra lo que somos.</p>
+      <p>Acá compartimos gestos, memorias, abrazos y preguntas.</p>
+      <p>Si algo te toca, si algo te hace pausa, es porque <em>Mirarte</em> está vivo.</p>
+      <p>Y vos ya sos parte.</p>
+    </section>
+<!--
+    <section class="transcripcion">
+      <h2>Transcripción de la bienvenida</h2>
+      <p><em>“Bienvenide a Mirarte.  
+      Este sitio es más que una página: es un espacio que mira, que escucha, que celebra lo que somos.  
+      Acá compartimos gestos, memorias, abrazos y preguntas.  
+      Si algo te toca, si algo te hace pausa, es porque Mirarte está vivo.  
+      Y vos ya sos parte.”</em></p>
+    </section>
+  -->
+  </main>
+
+  <script>
+    window.addEventListener('load', function() {
+      document.getElementById('loader').style.display = 'none';
+      document.querySelector('.landing').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
