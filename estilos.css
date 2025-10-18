@@ -136,12 +136,177 @@ audio {
   align-items: center;
   gap: 0.5em;
 }
+.danza-aerea,
+.danza-arabe,
+.danza-ballet,
+.danza-espacio,
+.dqueruza,
+.contacto {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  animation: aparecer 1.5s ease-in;
+}
 
+.presentacion-aerea img {
+  margin-bottom: 1rem;
+}
 
+.presentacion-aerea h1 {
+  font-size: 2rem;
+  color: #6c4eb6;
+  margin-bottom: 1rem;
+}
 
+.presentacion-aerea p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+}
 
+.audio-aerea {
+  margin-top: 2rem;
+}
 
+.audio-descripcion {
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #666;
+}
 
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.footer-mirarte {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  color: #444;
+}
 
+.footer-mirarte img {
+  margin-bottom: 0.5rem;
+}
 
+.footer-mirarte em {
+  font-style: italic;
+  color: #6c4eb6;
+}
 
+.footer-nav a {
+  color: #6c4eb6;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+.galeria-bloque {
+  margin: 4rem auto;
+  padding: 2rem;
+  max-width: 1000px;
+  border-left: 4px solid #c49b6c; /* tono cálido tipo velo */
+  background-color: #fdfaf6; /* fondo suave, casi ritual */
+}
+
+.titulo-bloque {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #5a3e2b;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion-bloque {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #7a6a58;
+  margin-bottom: 2rem;
+}
+
+.galeria-fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+figure {
+  margin: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #5a3e2b;
+  padding: 0.8rem;
+  background-color: #f5e9dc;
+  text-align: center;
+}
+figure {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.footer-mirarte p strong {
+  color: #6c4eb6;
+}
+.footer-contacto-directo {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.footer-contacto-directo p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.boton-whatsapp-footer {
+  margin-top: 0.8rem;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-whatsapp-footer:hover {
+  background-color: #1ebe57;
+}
+.mapa-contacto {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.mapa-contacto h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}

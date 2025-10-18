@@ -1,0 +1,90 @@
+<!-- Bloque completo: DQueruza | Mirarte -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DQueruza | Mirarte</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <nav class="menu-principal">
+    <ul>
+      <li><a href="index.html" title="Inicio"><img src="iconos/home24.png" alt="" width="24" height="24"> Inicio</a></li>
+      <li><a href="danza-aerea.html" title="Cuerpos que vuelan"><img src="iconos/aerea24.png" alt="" width="24" height="24">Danza aérea</a></li>
+      <li><a href="danza-arabe.html" title="Ritmos del alma"><img src="iconos/arabe24.png" alt="" width="24" height="24"> Danza árabe</a></li>
+      <li><a href="ballet.html" title="Clásico y presente"><img src="iconos/ballet24.png" alt="" width="24" height="24"> Ballet</a></li>
+      <li><a href="espacio.html" title="El lugar que nos abraza"><img src="iconos/espacio24.png" alt="" width="24" height="24"> Espacio para eventos o reuniones</a></li>
+      <li><a href="dqueruza.html" title="DQueruza: el pulso compartido"><img src="iconos/queruza24.png" alt="" width="24" height="24"> Milonga</a></li>
+      <li><a href="talleres.html" title="Donde se aprende y se enseña"><img src="iconos/talleres24.png" alt="" width="24" height="24"> Talleres</a></li>
+      <li><a href="tango.html" title="Compás y abrazo"><img src="iconos/tango24.png" alt="" width="24" height="24"> Tango</a></li>
+      <li><a href="teatro.html" title="Escenas que nos miran"><img src="iconos/teatro24.png" alt="" width="24" height="24"> Sala de Teatro Alternativo</a></li>
+      <li><a href="contacto.html" title="Contacto"><img src="iconos/contacto24.png" alt="" width="24" height="24"> Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div id="loader">
+    <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte cargando">
+    <p>Ajustando el compás...</p>
+  </div>
+
+  <main class="dqueruza" style="display:none;">
+    <header class="logo">
+      <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte">
+    </header>
+
+    <section class="presentacion-dqueruza">
+      <img src="iconos/queruza48.png" alt="Ícono DQueruza" width="48" height="48">
+      <h1>DQueruza: el pulso compartido</h1>
+      <p>DQueruza es un espacio donde el compás y el abrazo se encuentran para celebrar la milonga como ritual vivo. Aquí, cada paso es memoria y cada gesto, un puente entre almas.</p>
+      <p>Entre luces, sombras y miradas, se teje la historia de encuentros que laten al ritmo del tango y la complicidad.</p>
+      <p>Este lugar es para quienes sienten el pulso del barrio y la calidez del abrazo sincero.</p>
+    </section>
+
+    <section class="audio-dqueruza">
+      <audio controls aria-label="Reproductor de La Cumparsita, homenaje musical">
+        <source src="audio/lacumparsita.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+      </audio>
+      <p class="audio-descripcion">La Cumparsita: el compás que nos nombra</p>
+    </section>
+  </main>
+
+  <section class="galeria-bloque">
+    <h2 class="titulo-bloque">Milonga DQueruza</h2>
+    <p class="descripcion-bloque">Momentos compartidos: entre compases, abrazos y miradas.</p>
+
+    <div class="galeria-fotos">
+      <figure>
+        <img src="img/dqueruza1.jpg" alt="Pareja bailando milonga en DQueruza" loading="lazy">
+        <figcaption>El abrazo que conecta</figcaption>
+      </figure>
+      <figure>
+        <img src="img/dqueruza2.jpg" alt="Milonga en pausa vibrante" loading="lazy">
+        <figcaption>La pausa que respira</figcaption>
+      </figure>
+      <!-- Más figuras -->
+    </div>
+  </section>
+
+  <script>
+    window.addEventListener('load', function() {
+      document.getElementById('loader').style.display = 'none';
+      document.querySelector('.dqueruza').style.display = 'block';
+    });
+  </script>
+
+  <footer class="footer-mirarte">
+    <div class="footer-contenido">
+      <img src="iconos/queruza32.png" alt="Ícono DQueruza" width="32" height="32">
+      <p><em>Mirarte también es compartir el pulso del barrio.</em></p>
+      <p>Gracias por ser parte de esta milonga viva.</p>
+      <p><strong>📍 Dirección:</strong> Martín García 1912, a cuatro cuadras del MAM</p>
+      <p><strong>📞 Contacto:</strong> 092 750 501</p>
+      <nav class="footer-nav">
+        <a href="index.html">Volvé al compás</a> | <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espacio para eventos | Mirarte</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav class="menu-principal">
+  <ul>
+    <li>
+      <a href="index.html" title="Inicio">
+        <img src="iconos/home24.png" alt="" width="24" height="24">
+        Inicio
+      </a>
+    </li>
+    <li>
+      <a href="danza-aerea.html" title="Cuerpos que vuelan">
+        <img src="iconos/aerea24.png" alt="" width="24" height="24">
+        Danza aérea
+      </a>
+    </li>
+    <li>
+      <a href="danza-arabe.html" title="Ritmos del alma">
+        <img src="iconos/arabe24.png" alt="" width="24" height="24">
+        Danza árabe
+      </a>
+    </li>
+    <li>
+      <a href="ballet.html" title="Clásico y presente">
+        <img src="iconos/ballet24.png" alt="" width="24" height="24">
+        Ballet
+      </a>
+    </li>
+    <li>
+      <a href="espacio.html" title="El lugar que nos abraza">
+        <img src="iconos/espacio24.png" alt="" width="24" height="24">
+        Espacio para eventos o reuniones
+      </a>
+    </li>
+    <li>
+      <a href="dqueruza.html" title="DQueruza: el pulso compartido">
+        <img src="iconos/queruza24.png" alt="" width="24" height="24">
+        Milonga
+      </a>
+    </li>
+    <li>
+      <a href="talleres.html" title="Donde se aprende y se enseña">
+        <img src="iconos/talleres24.png" alt="" width="24" height="24">
+        Talleres
+      </a>
+    </li>
+    <li>
+      <a href="tango.html" title="Compás y abrazo">
+        <img src="iconos/tango24.png" alt="" width="24" height="24">
+        Tango
+      </a>
+    </li>
+    <li>
+      <a href="teatro.html" title="Escenas que nos miran">
+        <img src="iconos/teatro24.png" alt="" width="24" height="24">
+        Sala de Teatro Alternativo
+      </a>
+    </li>
+    <li>
+      <a href="contacto.html" title="Contacto">
+        <img src="iconos/contacto24.png" alt="" width="24" height="24">
+        Contacto
+      </a>
+    </li>
+  </ul>
+</nav>
+<div id="loader">
+  <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte cargando">
+  <p>Ajustando el compás...</p>
+</div>
+<main class="contacto" style="display:none;">
+  <header class="logo">
+    <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte">
+  </header>
+  <section class="presentacion-contacto">
+    <img src="iconos/contacto48.png" alt="Ícono contacto" width="48" height="48">
+    <h1>Contacto</h1>
+    <p>Si querés consultar por clases, eventos, espacio o simplemente compartir el compás, escribinos.</p>
+    <p><strong>📍 Dirección:</strong> Martín García 1912, a cuatro cuadras del MAM</p>
+    <p><strong>📞 WhatsApp:</strong> <a href="https://wa.me/59892750501" target="_blank" rel="noopener">092 750 501</a></p>
+  </section>
+  <section class="mapa-contacto">
+  <h2>¿Dónde estamos?</h2>
+  <iframe
+    src="https://www.google.com/maps?q=Martín+García+1912,+Montevideo,+Uruguay&output=embed"
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+</section>
+</main>
+
+<script>
+  window.addEventListener('load', function() {
+    document.getElementById('loader').style.display = 'none';
+    document.querySelector('.contacto').style.display = 'block';
+  });
+</script>
+</body>

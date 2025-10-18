@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danza árabe | Mirarte</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav class="menu-principal">
+  <ul>
+    <li>
+      <a href="index.html" title="Inicio">
+        <img src="iconos/home24.png" alt="" width="24" height="24">
+        Inicio
+      </a>
+    </li>
+    <li>
+      <a href="danza-aerea.html" title="Cuerpos que vuelan">
+        <img src="iconos/aerea24.png" alt="" width="24" height="24">a
+        Danza aérea
+      </a>
+    </li>
+    <li>
+      <a href="danza-arabe.html" title="Ritmos del alma">
+        <img src="iconos/arabe24.png" alt="" width="24" height="24">
+        Danza árabe
+      </a>
+    </li>
+    <li>
+      <a href="ballet.html" title="Clásico y presente">
+        <img src="iconos/ballet24.png" alt="" width="24" height="24">
+        Ballet
+      </a>
+    </li>
+    <li>
+      <a href="espacio.html" title="El lugar que nos abraza">
+        <img src="iconos/espacio24.png" alt="" width="24" height="24">
+        Espacio para eventos o reuniones
+      </a>
+    </li>
+    <li>
+      <a href="dqueruza.html" title="DQueruza: el pulso compartido">
+        <img src="iconos/queruza24.png" alt="" width="24" height="24">
+        Milonga
+      </a>
+    </li>
+    <li>
+      <a href="talleres.html" title="Donde se aprende y se enseña">
+        <img src="iconos/talleres24.png" alt="" width="24" height="24">
+        Talleres
+      </a>
+    </li>
+    <li>
+      <a href="tango.html" title="Compás y abrazo">
+        <img src="iconos/tango24.png" alt="" width="24" height="24">
+        Tango
+      </a>
+    </li>
+    <li>
+      <a href="teatro.html" title="Escenas que nos miran">
+        <img src="iconos/teatro24.png" alt="" width="24" height="24">
+        Sala de Teatro Alternativo
+      </a>
+    </li>
+    <li>
+      <a href="contacto.html" title="Contacto">
+        <img src="iconos/contacto24.png" alt="" width="24" height="24">
+        Contacto
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div id="loader">
+  <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte cargando">
+  <p>Ajustando el compás...</p>
+</div>
+
+<main class="danza-arabe" style="display:none;">
+  <header class="logo">
+    <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte">
+  </header>
+
+  <section class="presentacion-arabe">
+    <img src="iconos/arabe48.png" alt="Ícono danza árabe" width="48" height="48">
+    <h1>Ritmos del alma</h1>
+    <p>La danza árabe es un viaje interior que se dibuja en espirales, vibraciones y silencios. En <em>Mirarte</em>, celebramos el pulso que nace del vientre y se expande como oración en movimiento.</p>
+    <p>Entre velos, compases y miradas, cada gesto es memoria. Cada giro, una invocación compartida.</p>
+    <p>Este espacio es para quienes se animan a danzar desde adentro, a sentir el ritmo como puente entre mundos.</p>
+  </section>
+
+  <section class="audio-arabe">
+    <audio controls>
+      <source src="audio/arabe-presentacion.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+    <p class="audio-descripcion">Escuchá la voz que acompaña el ritual.</p>
+  </section>
+</main>
+
+<section class="galeria-bloque">
+  <h2 class="titulo-bloque">Danza árabe</h2>
+  <p class="descripcion-bloque">Nadia en su ritual: entre velo, mirada y compás.</p>
+
+  <div class="galeria-fotos">
+    <figure>
+      <img src="img/danza-arabe1.jpg" alt="Nadia girando con velo dorado" loading="lazy">
+      <figcaption>El giro que invoca</figcaption>
+    </figure>
+    <figure>
+      <img src="img/danza-arabe2.jpg" alt="Nadia en pausa vibrante" loading="lazy">
+      <figcaption>La pausa que respira</figcaption>
+    </figure>
+    <!-- Más figuras -->
+  </div>
+</section>
+
+<script>
+  window.addEventListener('load', function() {
+    document.getElementById('loader').style.display = 'none';
+    document.querySelector('.danza-arabe').style.display = 'block';
+  });
+</script>
+
+<footer class="footer-mirarte">
+  <div class="footer-contenido">
+    <img src="iconos/arabe32.png" alt="Ícono danza árabe" width="32" height="32">
+    <p><em>Mirarte también es danzar hacia adentro.</em></p>
+    <p>Gracias por compartir el pulso.</p>
+    <p><strong>📍 Dirección:</strong> Martín García 1912, a cuatro cuadras del MAM</p>
+<p><strong>📞 Contacto:</strong> 092 750 501</p>
+    <nav class="footer-nav">
+      <a href="index.html">Volvé al compás</a> |
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
