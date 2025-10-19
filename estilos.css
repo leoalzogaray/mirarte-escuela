@@ -329,3 +329,37 @@ figure {
     font-size: 0.8em;
   }
 }
+.footer-redes {
+  text-align: center;
+  margin-top: 1.5em;
+  padding-top: 1em;
+  border-top: 1px solid #ccc; /* línea suave para separar */
+}
+
+.footer-redes p {
+  margin: 0.5em 0;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.footer-redes a {
+  margin: 0 0.5em;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.footer-redes a:hover {
+  transform: scale(1.1); /* pequeño efecto al pasar el mouse */
+}
+
+.footer-redes img {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+
+.frase-redes {
+  font-style: italic;
+  color: #666;
+  margin-top: 0.8em;
+}
