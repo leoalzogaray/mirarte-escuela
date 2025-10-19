@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tango | Mirarte</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav class="menu-principal">
+  <ul>
+    <li>
+      <a href="index.html" title="Inicio">
+        <img src="iconos/home24.png" alt="" width="24" height="24">
+        Inicio
+      </a>
+    </li>
+    <li>
+      <a href="danza-aerea.html" title="Cuerpos que vuelan">
+        <img src="iconos/aerea24.png" alt="" width="24" height="24">
+        Aérea
+      </a>
+    </li>
+    <li>
+      <a href="danza-arabe.html" title="Ritmos del alma">
+        <img src="iconos/arabe24.png" alt="" width="24" height="24">
+        Árabe
+      </a>
+    </li>
+    <li>
+      <a href="ballet.html" title="Clásico y presente">
+        <img src="iconos/ballet24.png" alt="" width="24" height="24">
+        Ballet
+      </a>
+    </li>
+    <li>
+      <a href="espacio.html" title="Espacio para eventos o reuniones">
+        <img src="iconos/espacio24.png" alt="" width="24" height="24">
+        Sala 
+      </a>
+    </li>
+    <li>
+      <a href="dqueruza.html" title="DQueruza: el pulso compartido">
+        <img src="iconos/queruza24.png" alt="" width="24" height="24">
+        Milonga
+      </a>
+    </li>
+    <li>
+      <a href="talleres.html" title="Donde se aprende y se enseña">
+        <img src="iconos/talleres24.png" alt="" width="24" height="24">
+        Talleres
+      </a>
+    </li>
+    <li>
+      <a href="tango.html" title="Compás y abrazo">
+        <img src="iconos/tango24.png" alt="" width="24" height="24">
+        Tango
+      </a>
+    </li>
+    <li>
+      <a href="teatro.html" title="Sala de Teatro Alternativo">
+        <img src="iconos/teatro24.png" alt="" width="24" height="24">
+        Teatro 
+      </a>
+    </li>
+    <li>
+      <a href="contacto.html" title="Contacto">
+        <img src="iconos/contacto24.png" alt="" width="24" height="24">
+        Contacto
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div id="loader">
+  <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte cargando">
+  <p>Ajustando el compás...</p>
+</div>
+
+<main class="tango" style="display:none;">
+  <header class="logo">
+    <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte">
+  </header>
+
+  <section class="presentacion-tango">
+    <img src="iconos/tango48.png" alt="Ícono tango" width="48" height="48">
+    <h1>Compás y abrazo</h1>
+    <p>Las clases de tango en <em>Mirarte</em> son más que técnica: son encuentro, pausa y escucha. Cada paso se aprende como quien afina una caricia.</p>
+    <p>Celebramos el abrazo como espacio de confianza, el compás como lenguaje compartido, y el error como parte del baile.</p>
+    <p>Este espacio es para quienes quieren danzar desde el vínculo, sin apuros ni coreografías impuestas. Aquí, el tango se enseña como se vive: con respeto, humor y ternura.</p>
+  </section>
+<!-- Si llegaste hasta acá buscando técnica, quizás te convenga otra pista. Este tango respira como Leo: sin apuro, sin solemnidad, con abrazo. -->
+  <section class="audio-tango">
+    <audio controls controlsList="nodownload noplaybackrate">
+      <source src="audio/tango-clase.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+    <p class="audio-descripcion">Escuchá el pulso de una clase compartida.</p>
+  </section>
+</main>
+
+<section class="galeria-bloque">
+  <h2 class="titulo-bloque">Clases de Tango</h2>
+  <p class="descripcion-bloque">Fragmentos del abrazo, la pausa y el compás grupal.</p>
+
+  <div class="galeria-fotos">
+    <figure>
+      <img src="img/tango1.jpg" alt="Pareja en abrazo cerrado" loading="lazy">
+      <figcaption>El abrazo que escucha</figcaption>
+    </figure>
+    <figure>
+      <img src="img/tango2.jpg" alt="Grupo en ronda practicando compás" loading="lazy">
+      <figcaption>La ronda que respira</figcaption>
+    </figure>
+    <!-- Más figuras si querés -->
+  </div>
+</section>
+
+<script>
+  window.addEventListener('load', function() {
+    document.getElementById('loader').style.display = 'none';
+    document.querySelector('.tango').style.display = 'block';
+  });
+</script>
+
+<footer class="footer-mirarte">
+  <div class="footer-contenido">
+    <img src="iconos/tango32.png" alt="Ícono tango" width="32" height="32">
+    <p><em>Mirarte también es danzar en abrazo.</em></p>
+    <p>Gracias por compartir el compás.</p>
+    <p><strong>📍 Dirección:</strong> Martín García 1912, a cuatro cuadras del MAM</p>
+    <p><strong>📞 Contacto:</strong> 092 750 501</p>
+    <nav class="footer-nav">
+      <a href="index.html">Volvé al compás</a> |
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

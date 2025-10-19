@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teatro | Mirarte</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<nav class="menu-principal">
+  <ul>
+    <li>
+      <a href="index.html" title="Inicio">
+        <img src="iconos/home24.png" alt="" width="24" height="24">
+        Inicio
+      </a>
+    </li>
+    <li>
+      <a href="danza-aerea.html" title="Cuerpos que vuelan">
+        <img src="iconos/aerea24.png" alt="" width="24" height="24">
+        Aérea
+      </a>
+    </li>
+    <li>
+      <a href="danza-arabe.html" title="Ritmos del alma">
+        <img src="iconos/arabe24.png" alt="" width="24" height="24">
+        Árabe
+      </a>
+    </li>
+    <li>
+      <a href="ballet.html" title="Clásico y presente">
+        <img src="iconos/ballet24.png" alt="" width="24" height="24">
+        Ballet
+      </a>
+    </li>
+    <li>
+      <a href="espacio.html" title="Espacio para eventos o reuniones">
+        <img src="iconos/espacio24.png" alt="" width="24" height="24">
+        Sala 
+      </a>
+    </li>
+    <li>
+      <a href="dqueruza.html" title="DQueruza: el pulso compartido">
+        <img src="iconos/queruza24.png" alt="" width="24" height="24">
+        Milonga
+      </a>
+    </li>
+    <li>
+      <a href="talleres.html" title="Donde se aprende y se enseña">
+        <img src="iconos/talleres24.png" alt="" width="24" height="24">
+        Talleres
+      </a>
+    </li>
+    <li>
+      <a href="tango.html" title="Compás y abrazo">
+        <img src="iconos/tango24.png" alt="" width="24" height="24">
+        Tango
+      </a>
+    </li>
+    <li>
+      <a href="teatro.html" title="Sala de Teatro Alternativo">
+        <img src="iconos/teatro24.png" alt="" width="24" height="24">
+        Teatro 
+      </a>
+    </li>
+    <li>
+      <a href="contacto.html" title="Contacto">
+        <img src="iconos/contacto24.png" alt="" width="24" height="24">
+        Contacto
+      </a>
+    </li>
+  </ul>
+</nav>
+  
+<div id="loader">
+  <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte cargando">
+  <p>Ajustando el compás...</p>
+</div>
+
+<main class="teatro" style="display:none;">
+  <header class="logo">
+    <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte">
+  </header>
+
+  <section class="presentacion-teatro">
+    <img src="iconos/teatro48.png" alt="Ícono teatro" width="48" height="48">
+    <h1>Sala de Teatro Alternativo</h1>
+    <p>En <em>Mirarte</em>, el teatro no busca aplausos: busca verdad. Esta sala es refugio para lo íntimo, lo experimental, lo que no entra en la marquesina pero sí en el corazón.</p>
+    <p>Acá se ensaya el riesgo, se celebra el error, se juega con la pausa. Cada función es un ritual compartido, donde el público también respira escena.</p>
+    <p>Este espacio es para quienes se animan a mirar sin certezas, a actuar sin máscaras, a habitar el silencio como parte del guion.</p>
+  </section>
+
+  <section class="audio-teatro">
+    <audio controls controlsList="nodownload noplaybackrate">
+      <source src="audio/teatro-presentacion.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+    <p class="audio-descripcion">Escuchá el telón que se abre sin solemnidad.</p>
+  </section>
+</main>
+
+<section class="galeria-bloque">
+  <h2 class="titulo-bloque">Teatro Alternativo</h2>
+  <p class="descripcion-bloque">Fragmentos del riesgo, la pausa y el juego escénico.</p>
+
+  <div class="galeria-fotos">
+    <figure>
+      <img src="img/teatro1.jpg" alt="Actor en escena íntima con luz tenue" loading="lazy">
+      <figcaption>La pausa que revela</figcaption>
+    </figure>
+    <figure>
+      <img src="img/teatro2.jpg" alt="Grupo en ensayo alternativo" loading="lazy">
+      <figcaption>El ensayo que respira</figcaption>
+    </figure>
+    <!-- Más figuras si querés -->
+  </div>
+</section>
+
+<script>
+  window.addEventListener('load', function() {
+    document.getElementById('loader').style.display = 'none';
+    document.querySelector('.teatro').style.display = 'block';
+  });
+</script>
+
+<footer class="footer-mirarte">
+  <div class="footer-contenido">
+    <img src="iconos/teatro32.png" alt="Ícono teatro" width="32" height="32">
+    <p><em>Mirarte también es escena sin marquesina.</em></p>
+    <p>Gracias por compartir el riesgo.</p>
+    <p><strong>📍 Dirección:</strong> Martín García 1912, a cuatro cuadras del MAM</p>
+    <p><strong>📞 Contacto:</strong> 092 750 501</p>
+    <nav class="footer-nav">
+      <a href="index.html">Volvé al compás</a> |
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
