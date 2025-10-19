@@ -310,3 +310,19 @@ figure {
   margin-bottom: 1rem;
   color: #444;
 }
+.menu-principal ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu-principal li a {
+  white-space: nowrap;
+  padding: 6px 8px;
+  font-size: 0.9em;
+}
+@media (max-width: 600px) {
+  .menu-principal li a {
+    font-size: 0.8em;
+  }
+}
