@@ -85,7 +85,9 @@ audio {
   text-align: center;
   animation: aparecer 1.5s ease-in;
 }
-
+/* El compás volvió a respirar - 20 oct 2025, 00:16 */
+/* Error de llaves corregido. GitHub no lo vio, pero nosotros sí. */
+/* Gracias por bailar incluso en el lío. */
 .presentacion-aerea img {
   margin-bottom: 1rem;
 }
@@ -294,53 +296,70 @@ figure {
   font-family: 'Playfair Display', serif;
   max-width: 600px;
 }
-.menu-principal {
-  background-color: #f8f8f8;
-  padding: 1em;
-  text-align: center;
-  font-family: 'Helvetica Neue', sans-serif;
+/* Botón ☰ oculto en escritorio */
+.boton-rayitas {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  line-height: 1;
 }
 
+/* Menú horizontal en escritorio */
 .menu-principal ul {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
 }
 
 .menu-principal li {
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .menu-principal a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 0.5em 1em;
-  border-radius: 4px;
+  color: #222;
+  font-weight: 500;
+  gap: 8px;
+  padding: 8px 12px;
   transition: background-color 0.3s ease;
-  white-space: nowrap;
-  font-size: 0.9em;
 }
 
 .menu-principal a:hover {
-  background-color: #e0e0e0;
+  background-color: #f0f0f0;
+  border-radius: 6px;
 }
 
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 600px) {
+/* Móviles: botón visible, menú oculto por defecto */
+@media (max-width: 768px) {
+  .boton-rayitas {
+    display: block;
+  }
+
+  .menu-principal {
+    display: none;
+  }
+
+  .menu-principal.abierto {
+    display: block;
+  }
+
   .menu-principal ul {
     flex-direction: column;
-    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
   }
 
-  .menu-principal a {
-    font-size: 0.8em;
-    padding: 0.5em 0.8em;
+  .menu-principal li {
+    margin: 10px 0;
   }
 }
-
