@@ -69,8 +69,7 @@ audio {
   font-size: 1.3em;
   margin-bottom: 0.5em;
 }
-
-}
+/* Afinación corregida - 20 oct 2025 */
 .danza-aerea,
 .danza-arabe,
 .danza-ballet,
@@ -249,7 +248,7 @@ figure {
   color: #444;
 }
 
-}
+
 .footer-redes {
   text-align: center;
   margin-top: 1.5em;
