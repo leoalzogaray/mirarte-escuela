@@ -22,7 +22,7 @@ body {
   z-index: 9999;
 }
 #loader img {
-  max-width: 120px;
+  max-width: 280px;
   margin-bottom: 1em;
 }
 
@@ -35,10 +35,18 @@ body {
 }
 
 .logo img {
-  max-width: 150px;
+  max-width: 280px; 
   margin-bottom: 2em;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
+@media (max-width: 600px) {
+  .logo img {
+    max-width: 180px;
+  }
+}
 .bienvenida h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
