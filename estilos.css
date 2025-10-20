@@ -69,72 +69,7 @@ audio {
   font-size: 1.3em;
   margin-bottom: 0.5em;
 }
-.menu-principal {
-  background-color: #f0f0f0;
-  padding: 1em;
-  text-align: center;
-  font-family: 'Helvetica Neue', sans-serif;
-}
 
-.menu-principal ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
-}
-
-.menu-principal li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.menu-principal li a:hover {
-  background-color: #ddd;
-}
-.menu-principal {
-  background-color: #f8f8f8;
-  padding: 1em;
-  text-align: center;
-  font-family: 'Helvetica Neue', sans-serif;
-}
-
-.menu-principal ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
-}
-
-.menu-principal li {
-  position: relative;
-}
-
-.menu-principal a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.menu-principal a:hover {
-  background-color: #e0e0e0;
-}
-.menu-principal li a {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
 }
 .danza-aerea,
 .danza-arabe,
@@ -313,21 +248,7 @@ figure {
   margin-bottom: 1rem;
   color: #444;
 }
-.menu-principal ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
-.menu-principal li a {
-  white-space: nowrap;
-  padding: 6px 8px;
-  font-size: 0.9em;
-}
-@media (max-width: 600px) {
-  .menu-principal li a {
-    font-size: 0.8em;
-  }
 }
 .footer-redes {
   text-align: center;
@@ -374,3 +295,53 @@ figure {
   font-family: 'Playfair Display', serif;
   max-width: 600px;
 }
+.menu-principal {
+  background-color: #f8f8f8;
+  padding: 1em;
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.menu-principal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.menu-principal li {
+  position: relative;
+}
+
+.menu-principal a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.menu-principal a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+  .menu-principal ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-principal a {
+    font-size: 0.8em;
+    padding: 0.5em 0.8em;
+  }
+}
+
