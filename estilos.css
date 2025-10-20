@@ -363,3 +363,14 @@ figure {
   color: #666;
   margin-top: 0.8em;
 }
+.construccion {
+  background-color: #f5f0e6;
+  color: #5c3a2e;
+  padding: 1.5em;
+  margin: 2em auto;
+  border: 1px solid #d8cfc2;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  max-width: 600px;
+}
