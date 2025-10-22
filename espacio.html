@@ -11,70 +11,24 @@
 <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-<nav class="menu-principal">
-  <ul>
-    <li>
-      <a href="index.html" title="Inicio">
-        <img src="iconos/home24.png" alt="" width="24" height="24">
-        Inicio
-      </a>
-    </li>
-    <li>
-      <a href="danza-aerea.html" title="Cuerpos que vuelan">
-        <img src="iconos/aerea24.png" alt="" width="24" height="24">
-        Aérea
-      </a>
-    </li>
-    <li>
-      <a href="danza-arabe.html" title="Ritmos del alma">
-        <img src="iconos/arabe24.png" alt="" width="24" height="24">
-        Árabe
-      </a>
-    </li>
-    <li>
-      <a href="ballet.html" title="Clásico y presente">
-        <img src="iconos/ballet24.png" alt="" width="24" height="24">
-        Ballet
-      </a>
-    </li>
-    <li>
-      <a href="espacio.html" title="Espacio para eventos o reuniones">
-        <img src="iconos/espacio24.png" alt="" width="24" height="24">
-        Sala 
-      </a>
-    </li>
-    <li>
-      <a href="dqueruza.html" title="DQueruza: el pulso compartido">
-        <img src="iconos/queruza24.png" alt="" width="24" height="24">
-        Milonga
-      </a>
-    </li>
-    <li>
-      <a href="talleres.html" title="Donde se aprende y se enseña">
-        <img src="iconos/talleres24.png" alt="" width="24" height="24">
-        Talleres
-      </a>
-    </li>
-    <li>
-      <a href="tango.html" title="Compás y abrazo">
-        <img src="iconos/tango24.png" alt="" width="24" height="24">
-        Tango
-      </a>
-    </li>
-    <li>
-      <a href="teatro.html" title="Sala de Teatro Alternativo">
-        <img src="iconos/teatro24.png" alt="" width="24" height="24">
-        Teatro 
-      </a>
-    </li>
-    <li>
-      <a href="contacto.html" title="Contacto">
-        <img src="iconos/contacto24.png" alt="" width="24" height="24">
-        Contacto
-      </a>
-    </li>
-  </ul>
-</nav>
+ <header class="encabezado-mirarte">
+  <button class="boton-rayitas" aria-label="Abrir navegación" aria-expanded="false">☰</button>
+
+  <nav class="menu-principal">
+    <ul>
+      <li><a href="index.html" title="Inicio"><img src="iconos/home24.png" alt=""> Inicio</a></li>
+      <li><a href="danza-aerea.html" title="Cuerpos que vuelan"><img src="iconos/aerea24.png" alt=""> Aérea</a></li>
+      <li><a href="danza-arabe.html" title="Ritmos del alma"><img src="iconos/arabe24.png" alt=""> Árabe</a></li>
+      <li><a href="ballet.html" title="Clásico y presente"><img src="iconos/ballet24.png" alt=""> Ballet</a></li>
+      <li><a href="espacio.html" title="Espacio para eventos o reuniones"><img src="iconos/espacio24.png" alt=""> Sala</a></li>
+      <li><a href="dqueruza.html" title="DQueruza: el pulso compartido"><img src="iconos/queruza24.png" alt=""> Milonga</a></li>
+      <li><a href="talleres.html" title="Donde se aprende y se enseña"><img src="iconos/talleres24.png" alt=""> Talleres</a></li>
+      <li><a href="tango.html" title="Compás y abrazo"><img src="iconos/tango24.png" alt=""> Tango</a></li>
+      <li><a href="teatro.html" title="Sala de Teatro Alternativo"><img src="iconos/teatro24.png" alt=""> Teatro</a></li>
+      <li><a href="contacto.html" title="Contacto"><img src="iconos/contacto24.png" alt=""> Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 <div id="loader">
   <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte cargando">
   <p>Ajustando el compás...</p>
@@ -118,6 +72,17 @@
   });
 </script>
 
+  <script>
+  const toggleButton = document.querySelector('.boton-rayitas');
+  const menu = document.querySelector('.menu-principal');
+
+  toggleButton.addEventListener('click', () => {
+    const abierto = menu.classList.toggle('abierto');
+    toggleButton.setAttribute('aria-expanded', abierto);
+    toggleButton.textContent = abierto ? '✖' : '☰';
+  });
+</script>
+
 <footer class="footer-mirarte">
   <div class="footer-contenido">
     <img src="iconos/espacio32.png" alt="Ícono espacio" width="32" height="32">
@@ -125,6 +90,16 @@
     <p>Gracias por confiar en nuestro abrazo físico.</p>
     <p><strong>📍 Dirección:</strong> Martín García 1912, a cuatro cuadras del MAM</p>
 <p><strong>📞 Contacto:</strong> 092 750 501</p>
+<div class="footer-redes">
+  <p><strong>📱 Redes:</strong></p>
+  <a href="https://www.instagram.com/mirarteescueladedanza" target="_blank" rel="noopener">
+    <img src="iconos/instagram24.png" alt="Instagram Mirarte" width="24" height="24">
+  </a>
+  <a href="https://www.facebook.com/Uruguaydanza" target="_blank" rel="noopener">
+    <img src="iconos/facebook24.png" alt="Facebook Mirarte" width="24" height="24">
+  </a>
+  <p class="frase-redes">También danzamos en redes, sin apuro y con compás.</p>
+</div>
     <nav class="footer-nav">
       <a href="index.html">Volvé al compás</a> |
       <a href="contacto.html">Contacto</a>
