@@ -370,4 +370,10 @@ figure {
   .menu-principal li {
     margin: 10px 0;
   }
+
 }
+body {
+  overflow: hidden;
+}
+
+

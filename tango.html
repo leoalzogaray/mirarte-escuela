@@ -31,8 +31,7 @@
 </header>
 
 <div id="loader">
-  <img src="img/logo-mirarte.jpg" alt="Logo de Mirarte cargando">
-  <p>Ajustando el compás...</p>
+    <p>Ajustando el compás...</p>
 </div>
 
 <main class="tango" style="display:none;">
@@ -75,9 +74,29 @@
 </section>
 
 <script>
-  window.addEventListener('load', function() {
-    document.getElementById('loader').style.display = 'none';
-    document.querySelector('.tango').style.display = 'block';
+  // Oculta el scroll mientras carga
+  document.body.style.overflow = 'hidden';
+
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      const loader = document.getElementById('loader');
+      if (loader) {
+        loader.classList.add('fade-out');
+
+        setTimeout(function () {
+          loader.style.display = 'none';
+
+          // Restaura el scroll
+          document.body.style.overflow = 'auto';
+
+          // Muestra el contenido principal si estaba oculto
+          const main = document.querySelector('main');
+          if (main && main.style.display === 'none') {
+            main.style.display = 'block';
+          }
+        }, 800); // tiempo del fade-out
+      }
+    }, 2500); // tiempo total del loader visible
   });
 </script>
 
