@@ -376,4 +376,22 @@ body {
   overflow: hidden;
 }
 
+.tango-schedule {
+  display: flex;
+  justify-content: center;   /* centra horizontalmente */
+  padding: 2rem 1rem;
+}
 
+.schedule-wrap {
+  max-width: 600px;          /* ancho máximo del bloque */
+  text-align: center;        /* centra el contenido dentro */
+  background: #fff;          /* fondo claro solo para el bloque */
+  color: #000;               /* texto oscuro */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.schedule-block {
+  margin: 1rem 0;
+}
