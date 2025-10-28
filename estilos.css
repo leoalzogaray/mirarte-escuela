@@ -395,3 +395,7 @@ body {
 .schedule-block {
   margin: 1rem 0;
 }
+.milonga-schedule .schedule-wrap {
+  text-align: center;   /* centra títulos y párrafos */
+  margin: 0 auto;       /* asegura que el bloque se ubique centrado */
+}
