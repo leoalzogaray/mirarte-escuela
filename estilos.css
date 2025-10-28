@@ -399,3 +399,27 @@ body {
   text-align: center;   /* centra títulos y párrafos */
   margin: 0 auto;       /* asegura que el bloque se ubique centrado */
 }
+.arabe-schedule {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.arabe-schedule .schedule-wrap {
+  max-width: 600px;
+  text-align: center;
+  background: #fff;
+  color: #000;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.schedule-block {
+  margin: 1rem 0;
+}
+
+.schedule-note {
+  font-style: italic;
+  margin-top: 1rem;
+}
