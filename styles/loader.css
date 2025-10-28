@@ -1,0 +1,40 @@
+/**
+ * loader.css
+ * 
+ * Minimal CSS for #page-loader and [data-main-loader] elements.
+ * This file provides fade behavior and transition styles for the main loader.
+ * 
+ * Note: The main loader layout and positioning styles are already in estilos.css.
+ * This file only adds the transition and fade-out behavior that was previously inline.
+ * 
+ * Usage (optional):
+ * Include this in your HTML head if you want centralized loader transition styles:
+ * <link rel="stylesheet" href="styles/loader.css">
+ */
+
+/* Transition and fade behavior for loader */
+#loader,
+[data-main-loader] {
+  transition: opacity 0.8s ease;
+  opacity: 1;
+}
+
+#loader.fade-out,
+[data-main-loader].fade-out {
+  opacity: 0;
+}
+
+/* Optional: Spinner animation if needed in the future */
+.loader-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #6c4eb6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
