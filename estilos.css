@@ -423,3 +423,28 @@ body {
   font-style: italic;
   margin-top: 1rem;
 }
+.footer {
+  background-color: transparent;
+  color: #000;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pugliese-logo {
+  width: 10%;
+  height: auto;
+  opacity: 0.7;
+  background-color: transparent; /* asegura que no se le agregue fondo */
+}
+
+.footer-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
