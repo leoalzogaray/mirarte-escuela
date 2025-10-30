@@ -437,7 +437,7 @@ body {
 }
 
 .pugliese-logo {
-  width: 10%;
+  width: 100px;
   height: auto;
   opacity: 0.7;
   background-color: transparent; /* asegura que no se le agregue fondo */
@@ -445,6 +445,12 @@ body {
 
 .footer-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
 }
+@media (max-width: 600px) {
+  .pugliese-logo {
+    width: 90px;
+  }
+}
+
